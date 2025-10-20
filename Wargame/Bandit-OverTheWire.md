@@ -15,7 +15,7 @@ Niveau | Apprentissage | Commandes | Dificultés rencontrées et astuces
 6-7 | Trouver un fichier avec propriétés connues; propriétaire, groupe, taille | find / -user bandit7 -group bandit6 -size 33c 2>/dev/null | **Problème 1** : la commande :$ find -user bandit7 -group bandit6 -size 33c n'affiche absolument rien. <br> **Astuce** : J'ai rajouté "/" avant les propriétés, ce qui permet de rechercher partout sur la machine. <br> <br> **Problème 2** : Beaucoup de fichiers "permission denied". <br> **Astuce**: Supprimer les messages d'erreur avec l'option "2>/dev/null"
 7-8 | Rechercher un mot spécifique dans un fichier | grep | ici, $ grep millionth data.txt
 8-9 | Rechercher un mot ou une phrase unique dans un fichier | uniq | $ cat data.txt \| uniq -u
-9-10 | 
-10-11 |
+9-10 | Rechercher des chaînes de caractères dans un fichier qui ne contient pas uniquement des caractères ASCII | strings, grep : $ strings data.txt \| grep "==" | La commande strings permet de retrouver uniquement les caractères lisibles par l'humain. La commande grep ajoute l'information que je dois trouver un caractère particulier.
+10-11 | Décoder base64 | base64 | La commande $ base 64 : permet d'encoder <br> $ base64 -d : permet de décoder <br> **Ici** : base64 -d data.txt
 11-12 |
 12-13 |
