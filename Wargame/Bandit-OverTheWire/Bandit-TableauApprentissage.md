@@ -1,9 +1,8 @@
-# Ce que j'apprend
-
-
+# Ce que j'apprends
+ 
 Ici, un tableau présentant ce que j'ai pu apprendre en fonction des niveau et les difficultés rencontré
-
-
+ 
+ 
 Niveau | Apprentissage | Commandes | Dificultés rencontrées et astuces
 ------|----------------|----------|-----
 0-1 | Se connecter au serveur en utilisant le SSH depuis un terminal | `ls`, `cat`
