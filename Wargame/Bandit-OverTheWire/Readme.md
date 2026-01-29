@@ -12,6 +12,6 @@ De plus, la langue originelle du jeu est en Anglais, alors le laisser telle quel
 
 J'ai pu démarer ce jeu en Septembre 2025 en parallèle de mon emploi à temps plein.
 
-### Fichier tableau
+### Le fichier "TableauApprendtissage"
 
-Dans ce fichier, je retrace ce que j'apprend pendant le jeu, et donc les solutions mais sans les MDP
+Retrace ce que j'apprend pendant le jeu avec les solutions pour avancer, sans MDP
