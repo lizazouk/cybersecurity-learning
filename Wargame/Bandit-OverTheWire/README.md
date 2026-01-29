@@ -4,19 +4,19 @@
 
 ### Un jeu pour débutants
 
-Ce jeu est un très bon outils pour apprendre les lingnes de commande Linux (CLI)
+Ce jeu est un excellent outil pour apprendre les lignes de commande Linux (CLI).
 .
-Il est adapté aux débutants motivés, qui sont prêt à faire des recherches internet et se remuer les méninges parfois durant des heures. Tout ne s'apprend pas du jour au lendemain. :)
-De plus, la langue originelle du jeu est en Anglais, alors le laisser tel quel permet d'acquérir de meilleures notions en Anglais.
+Il est adapté aux débutants motivés, prêts à faire des recherches sur Internet et à se remuer les méninges, parfois durant des heures. Tout ne s'apprend pas du jour au lendemain. :)
+De plus, la jeu étant en Anglais, le laisser tel quel permet d'acquérir de meilleures notions techniques de cette langue, indispensable dans le milieux cybersécurité.
 
 ### Lancement du jeu
 
-J'ai pu démarer ce jeu en Septembre 2025 en parallèle de mon emploi à temps plein.
+J'ai démaré ce jeu en Septembre 2025, en parallèle de mon emploi à temps plein, afin de préparer ma reconversion.
 
 ### Le fichier "Bandit-Writeup"
 
-Retrace ce que j'apprend pendant le jeu et les difficultés rencontrés.
-Ne contient pas les MDP, seulement la stratégie.
+Il retrace ce que j'apprends durant le jeu et les difficultés rencontrées. 
+**Attention :** Ce fichier ne contient pas les mots de passe, seulement la stratégie et la logique de résolution.
 
 ## Méthodologie générale
 Pour chaque niveau, ma démarche est la suivante :
