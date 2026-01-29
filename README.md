@@ -4,7 +4,9 @@ Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premie
 
 ## 👩‍💻 Qui suis je ?
 Une adepte des défis et des casse-têtes qui a décidé de se reconvertir vers la cybersécurité en septembre 2025.
+
 Pourquoi ? Parce que j'y retrouve une exigence technique, une grande polyvalence, un besoin de rigueur et cette satisfaction de "trouver la faille" ou comprendre les rouages d'un système.
+
 Aimant l'apprentissage des langues, je vois l'informatique comme un nouveau langage à explorer et un challenge permanent.
 
 ## 📂 Contenu du dossier
