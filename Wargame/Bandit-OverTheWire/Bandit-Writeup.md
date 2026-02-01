@@ -3,7 +3,7 @@
 Ici, un tableau présentant ce que j'ai pu apprendre en fonction des niveau et les difficultés rencontré
  
  
-Niveau | Apprentissage | Commandes | Dificultés rencontrées et astuces
+Niveau | Apprentissage | Commandes | Dificultés rencontré et astuces
 ------|----------------|----------|-----
 0-1 | Se connecter au serveur en utilisant le SSH depuis un terminal | `ls`, `cat`
 1-2 | Lire un fichier avec caractère spécial "-" | cat ./-file
