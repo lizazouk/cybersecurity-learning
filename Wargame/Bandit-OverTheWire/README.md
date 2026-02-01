@@ -8,7 +8,7 @@ Ce jeu est un excellent outil pour apprendre les lignes de commande Linux (CLI).
 
 Il est adapté aux débutants motivés, prêts à faire des recherches sur Internet et à se remuer les méninges, parfois durant des heures. Tout ne s'apprend pas du jour au lendemain :)
 
-De plus, la jeu étant en Anglais, le laisser tel quel permet d'acquérir de meilleures notions techniques de cette langue, indispensable dans le milieux cybersécurité.
+De plus, le jeu étant en Anglais, le laisser tel quel permet d'acquérir de meilleures notions techniques de cette langue, indispensable dans le milieux cybersécurité.
 
 ### Lancement du jeu
 
