@@ -21,20 +21,14 @@ Ex:  `./-filename`
 
 ### Trouver le seul fichier "lisible par un humain" : ASCII text
 
-Utiliser la commande `file` sur tous les fichiers du dossier
-
-    file ./* (pour analyser tous les fichiers du dossier actuel)
-    l'étoile permet de remplacer "tout ce qui suit"
-
-Si on sait quel type de fichier est recherché :
-
-    file ./* | grep "ASCII text"
-    Traduction : Regarde le type de tous les fichiers ET montre-moi que les lignes où il y a écrit 'ASCII text'
+      file ./* | grep "ASCII text"
+    
+Traduction : Regarde le type de tous les fichiers ET montre-moi que les lignes où il y a écrit 'ASCII text'
 
 
 ### Trouver un fichier avec caractéristiques spéciales
 
-Exemple : find -size 33c ...
+      find -size 33c ...
 
 **Rechercher partout sur la machine :** Rajouter / après la commande pour partir de la racine.
 
@@ -42,7 +36,7 @@ Exemple : find -size 33c ...
 
 Astuce : Rajouter `2>/dev/null` à la fin de ta commande. 
 
-Exemple : find / -size 33c 2>/dev/null
+      find / -size 33c 2>/dev/null
 
 ----
 
