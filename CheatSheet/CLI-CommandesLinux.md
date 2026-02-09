@@ -1,4 +1,4 @@
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ---- 
 
