@@ -29,7 +29,20 @@ Utiliser la commande `file` sur tous les fichiers du dossier
 Si on sait quel type de fichier est recherché :
 
     file ./* | grep "ASCII text"
-    Traduction : "Regarde le type de tous les fichiers ET ne montre-moi que les lignes où il y a écrit 'ASCII text'".
+    Traduction : Regarde le type de tous les fichiers ET montre-moi que les lignes où il y a écrit 'ASCII text'
+
+
+### Trouver un fichier avec caractéristiques spéciales
+
+Exemple : find -size 33c ...
+
+**Rechercher partout sur la machine :** Rajouter / après la commande pour partir de la racine.
+
+**Supprimer les messages d'erreur envahissants :** Quand on n'a pas les droits partout, le terminal affiche plein de "Permission denied". On peut les cacher en envoyant les erreurs dans le "trou noir" de Linux. 
+
+Astuce : Rajouter `2>/dev/null` à la fin de ta commande. 
+
+Exemple : find / -size 33c 2>/dev/null
 
 ----
 
