@@ -1,4 +1,4 @@
-4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ---- 
 
@@ -50,6 +50,20 @@ Astuce : Rajouter `2>/dev/null` à la fin de ta commande.
 
     cat data.txt | sort | uniq -u
 `-u` permet de supprimer toutes les lignes / mots **ayant** dans doublons
+
+
+----
+
+## 📦 Encodage & Données
+
+### Lire du texte lisible parmit du charabia
+
+La ccommande `strings` ignore les caractères bizarres et n'affiche que les suites de caractères "imprimables" (le texte).
+
+    strings "fichier"
+
+**Note technique :** Si on utilise `cat` sur un fichier binaire, le terminal peut planter ou afficher des symboles étranges. `strings` est la méthode "propre" pour scanner l'intérieur d'un fichier exécutable ou d'une image à la recherche d'indices (comme des flags ou des commentaires).
+
 
 
 
