@@ -38,6 +38,21 @@ Astuce : Rajouter `2>/dev/null` à la fin de ta commande.
 
       find / -size 33c 2>/dev/null
 
+
+### Trouver un mot dans un fichier précis
+
+      grep "mot précis" fichier
+
+
+### Extraire une ligne / mot unique dans un fichier rempli de doublons non ordonnés. 
+
+/!\ Toujours trier le fichier avant d'utiliser `uniq` grace à `sort`, sinon `uniq` ne compare que des lignes adjacentes (qui se touchent)
+
+    cat data.txt | sort | uniq -u
+`-u` permet de supprimer toutes les lignes / mots **ayant** dans doublons
+
+
+
 ----
 
 ## 🔑 Lecture & Droits (Lire un fichier que tu n'as pas le droit d'ouvrir, comprendre les permissions)
