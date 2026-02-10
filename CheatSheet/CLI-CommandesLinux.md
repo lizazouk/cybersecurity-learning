@@ -17,7 +17,7 @@ Ex:  `./-filename`
 
 ----
 
-## 🔍 Recherche & Filtrage (Chercher un mot dans 100 fichiers, trouver un fichier par sa taille)
+## 🔍 Recherche & Filtrage
 
 ### Trouver le seul fichier "lisible par un humain" : ASCII text
 
@@ -89,12 +89,12 @@ Indices visuels (Le "Check-list") :
 
 ----
 
-## 🔑 Lecture & Droits (Lire un fichier que tu n'as pas le droit d'ouvrir, comprendre les permissions)
+## 🔑 Lecture & Droits 
 
 
 
 ----
 
-## 🌐 Connexion & Réseau (Se connecter en SSH, envoyer un fichier à distance)
+## 🌐 Connexion & Réseau 
 
 
