@@ -65,6 +65,26 @@ La ccommande `strings` ignore les caractères bizarres et n'affiche que les suit
 **Note technique :** Si on utilise `cat` sur un fichier binaire, le terminal peut planter ou afficher des symboles étranges. `strings` est la méthode "propre" pour scanner l'intérieur d'un fichier exécutable ou d'une image à la recherche d'indices (comme des flags ou des commentaires).
 
 
+### Identifier Base64
+
+Indices visuels (Le "Check-list") :
+
+    Le Padding `=` : l'indice ultime. Si la chaîne se termine par un ou deux `=`, c'est presque à coup sûr du Base64. (Note : le = sert à compléter la taille du bloc)
+
+    L'Alphabet : Il n'utilise que :
+
+        Des majuscules (A-Z)
+
+        Des minuscules (a-z)
+
+        Des chiffres (0-9)
+
+        Les symboles + et /
+
+**Exemple :** YWRtaW4= (Une fois décodé, cela donne admin).
+
+**Pour le décoder** : commande `base64 -d`
+
 
 
 ----
