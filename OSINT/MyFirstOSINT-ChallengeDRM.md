@@ -14,6 +14,8 @@ Vous pourrez voir mes recherches, mon avancé et peut être une hypothèse ?
 
 - Analyse générale : Ce que jobserve sur cette image et premières hypothèses
 
+- Metadata de l'image (même si venant de la DRM je ne pense pas avoir grand chose)
+
 - Amélioration d'image : Tentative d'upscaling avec Upscayl et Waifu2x
 
 - Analyse IMINT (Matériel) : Anlyse plus poussée avec des hypothèses sur les véhicules et matériel visible
@@ -22,4 +24,38 @@ Vous pourrez voir mes recherches, mon avancé et peut être une hypothèse ?
 
 
 ## Analyse Générale
+
+- Un désert avec des nuances assez orangées, rouges
+- Présence de merlons (murs de sable) : un grand pour délimiter la zone globale et des petits (encuvement) individuels, qui entourent les véhicules, chars
+- De nombreuses traces de pneus, chenilles au sol indiquent une activité dynamique, ils entrent et sortes de la zone. De plus, certains emplacements pour chars sont vides
+- On aperçoit une présence de piquets, ou grillage, ce qui suggère une zone militaire de défense ou un camps d'entraînement sécurisé
+- L'observation de canons sur les véhicules confirme que ce sont des engins de combat / artillerie.  Ceux-ci sont bien rangés avec les canons en position route (droits dans l'axe)
+- Les ombres sont franches et déportées vers la gauche.
+
+Hypothèse géographique : Si le haut de l'image correspond au Nord (standard satellite), le soleil vient de l'Est/Sud-Est. Cela placerait la prise de vue en milieu de matinée.
+
+L'alignement parfait des véhicules dans des écuvement délimitées, associé à une clôture, privilégie l'hypothèse d'un parc d'alerte ou d'une zone de stockage temporaire lors d'un exercice majeur, hors conflit.
+
+
+## Metadata de l'image
+
+Utilisation d'`exiftool` via un flux distant pour éviter la pollution locale :
+
+       curl -s "URL_IMAGE" | exiftool -
+
+Constat : Absence totale de données EXIF/GPS (nettoyage automatique par LinkedIn/OPSEC). C'était évident, au moins j'ai pris connaissance de la commande `exiftool`.
+
+
+## 
+
+
+---
+
+SPURCES UTILES :
+
+[youtube video : 4 Free Satellite Imagery Sources](https://youtu.be/OONjbRAR-TM?si=jTgfZjyu_CjshKbf)
+
+[youtube video : find EXIF/metadata in a photo or video](https://youtu.be/d3NsT8lJRlE?si=1zk9UJbOHeyu0CTh)
+
+Téléchargement de Exiftool pour l'utiliser directement depuis mon terminal
 
