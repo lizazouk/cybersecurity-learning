@@ -1,6 +1,6 @@
 15/02/2026
 
-## Analyse d'un défi posté par la DRM (Direction du Renseignement Militaire) sur LinkedIn
+## Défi OSINT posté par la DRM (Direction du Renseignement Militaire) sur LinkedIn
 
 ### Objectif : Identifier le matériel et la localisation d'une image satellite
 
