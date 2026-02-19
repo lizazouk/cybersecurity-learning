@@ -45,9 +45,12 @@ L'alignement parfait des véhicules dans des écuvement délimitées, associé �
 
 Utilisation d'`exiftool` via un flux distant pour éviter la pollution locale :
 
-       curl -s "URL_IMAGE" | exiftool -
+       curl -s "URL_IMAGE_EN_LIGNE" | exiftool -
 
 Constat : Absence totale de données EXIF/GPS (nettoyage automatique par LinkedIn/OPSEC). C'était évident, au moins j'ai pris connaissance de la commande `exiftool`.
+
+Je me doutais bien que je ne trouverais rien d'intéressant, mais ça m'a permit de découvrir cette commande.
+
 
 
 ## 
