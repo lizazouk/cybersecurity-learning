@@ -10,6 +10,10 @@ La DRM poste souvent des défis OSINT avec le tag #Yeuxdor sur LinkedIn tel que 
 Je vais tenter d'y répondre. Cependant je n'ai aucune expérience dans ce domaine.
 Vous pourrez voir mes recherches, mon avancé et peut être une hypothèse ?
 
+![ImageYeuxdor1](https://github.com/lizazouk/cybersecurity-learning/blob/main/wiki-images/DRM-ChallengeYeuxdor-15022026.jpg?raw=true)
+
+
+
 ## Ma Méthodologie :
 
 - Analyse générale : Ce que jobserve sur cette image et premières hypothèses
