@@ -43,7 +43,16 @@ Astuce : Rajouter `2>/dev/null` à la fin de ta commande.
 
       grep "mot précis" fichier
 
+##### Dans tous les fichiers dans lesquels il apparaît
 
+      grep -irl "cesarbrut" *
+
+-i pour insensible à la casse
+-r pour récursif
+-l pour que la commande te donne le nom du fichier
+et * pour rechercher dans tous les fichiers à partir du répertoire courant
+
+ 
 ### Extraire une ligne / mot unique dans un fichier rempli de doublons non ordonnés. 
 
 /!\ Toujours trier le fichier avant d'utiliser `uniq` grace à `sort`, sinon `uniq` ne compare que des lignes adjacentes (qui se touchent)
