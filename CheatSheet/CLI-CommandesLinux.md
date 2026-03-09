@@ -43,9 +43,9 @@ Astuce : Rajouter `2>/dev/null` à la fin de ta commande.
 
       grep "mot précis" fichier
 
-##### Dans tous les fichiers dans lesquels il apparaît
+#### Dans tous les fichiers dans lesquels il apparaît
 
-      grep -irl "cesarbrut" *
+      grep -irl "mot précis" *
 
 -i pour insensible à la casse
 -r pour récursif
