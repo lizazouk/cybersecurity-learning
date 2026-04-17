@@ -1,109 +1,137 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
----- 
+## Navigation et Gestion de base
 
-## 📂 Manipulation de fichiers spéciaux
-
-### Commence par `-`
-Sans rien devant, la commande le considère comme une option, ajouter `./` 
-
-Ex:  `./-filename`
-
-### Contient des espaces
-
-Écrire le nom du fichier entre `""`
-
-
-
-----
-
-## 🔍 Recherche & Filtrage
-
-### Trouver le seul fichier "lisible par un humain" : ASCII text
-
-      file ./* | grep "ASCII text"
+- **pwd** : Affiche le répertoire courant (Print Working Directory).
     
-Traduction : Regarde le type de tous les fichiers ET montre-moi que les lignes où il y a écrit 'ASCII text'
+- **ls** : Liste le contenu du répertoire.
+    
+    - **ls -l** : Format détaillé (droits, taille, date).
+        
+    - **ls -a** : Affiche les fichiers cachés (commençant par un point).
+        
+    - **ls -R** : Liste récursive (inclut les sous-dossiers).
+        
+- **cd [dossier]** : Se déplacer dans un dossier.
+    
+    - **cd ..** : Remonter d'un niveau.
+        
+    - **cd ~** : Retourner au répertoire personnel.
+        
+- **mkdir [nom]** : Créer un dossier.
+    
+    - **mkdir -p A/B/C** : Crée toute l'arborescence parente si nécessaire.
+        
+    - **mkdir {D1,D2}** : Crée plusieurs dossiers d'un coup (expansion d'accolades).
+        
+- **cp [source] [destination]** : Copier un fichier.
+    
+- **mv [source] [destination]** : Déplacer ou renommer un fichier/dossier.
+    
+- **rm [fichier]** : Supprimer un fichier.
+    
+    - **rm -r [dossier]** : Supprimer un dossier et son contenu.
+        
 
+## Manipulation de fichiers spéciaux
 
-### Trouver un fichier avec caractéristiques spéciales
+### Fichiers commençant par un tiret (-)
 
-      find -size 33c ...
+Utiliser le chemin relatif pour éviter la confusion avec une option de commande.
 
-**Rechercher partout sur la machine :** Rajouter / après la commande pour partir de la racine.
+- Exemple : `cat ./-filename`
+    
 
-**Supprimer les messages d'erreur envahissants :** Quand on n'a pas les droits partout, le terminal affiche plein de "Permission denied". On peut les cacher en envoyant les erreurs dans le "trou noir" de Linux. 
+### Noms contenant des espaces
 
-Astuce : Rajouter `2>/dev/null` à la fin de ta commande. 
+Encadrer le nom par des guillemets doubles.
 
-      find / -size 33c 2>/dev/null
+- Exemple : `cat "nom avec espaces.txt"`
+    
 
+## Recherche et Filtrage
 
-### Trouver un mot dans un fichier précis
+### Identification du type de fichier
 
-      grep "mot précis" fichier
+- **file [fichier]** : Analyse la signature (magic bytes) pour donner le type réel.
+    
+- __file ./_ | grep "ASCII text"_* : Trouve les fichiers lisibles par l'humain dans le répertoire.
+    
 
-#### Dans tous les fichiers dans lesquels il apparaît
+### Commande find
 
-      grep -irl "mot précis" *
+- **find [chemin] -size [taille]** : Recherche par taille (ex: 33c pour 33 octets).
+    
+- **find / -name "nom" 2>/dev/null** : Recherche sur toute la racine en masquant les erreurs de permission.
+    
 
--i pour insensible à la casse
--r pour récursif
--l pour que la commande te donne le nom du fichier
-et * pour rechercher dans tous les fichiers à partir du répertoire courant
+### Commande grep (Recherche de texte)
 
- 
-### Extraire une ligne / mot unique dans un fichier rempli de doublons non ordonnés. 
+- **grep "motif" [fichier]** : Cherche un mot précis.
+    
+- **grep -irl "motif" *** : Recherche récursive, insensible à la casse, affiche uniquement les noms de fichiers.
+    
 
-/!\ Toujours trier le fichier avant d'utiliser `uniq` grace à `sort`, sinon `uniq` ne compare que des lignes adjacentes (qui se touchent)
+### Tri et Unicité
 
-    cat data.txt | sort | uniq -u
-`-u` permet de supprimer toutes les lignes / mots **ayant** dans doublons
+- **sort** : Trie les lignes par ordre alphabétique.
+    
+- **uniq -u** : Affiche uniquement les lignes qui n'apparaissent qu'une seule fois (nécessite un fichier trié au préalable).
+    
+    - Exemple : `cat data.txt | sort | uniq -u`
+        
 
+## Encodage et Données
 
-----
+### Analyse de binaires
 
-## 📦 Encodage & Données
+- **strings [fichier]** : Extrait les chaînes de caractères imprimables d'un fichier binaire. Utile pour trouver des indices cachés dans des images ou exécutables.
+    
 
-### Lire du texte lisible parmit du charabia
+### Base64
 
-La ccommande `strings` ignore les caractères bizarres et n'affiche que les suites de caractères "imprimables" (le texte).
+- **Indices** : Alphabet (A-Z, a-z, 0-9, +, /) et présence possible de "=" ou "==" en fin de chaîne (padding).
+    
+- **base64 -d** : Décode une chaîne.
+    
+    - Exemple : `echo "YWRtaW4=" | base64 -d`
+        
 
-    strings "fichier"
+## Workflow Git et GitHub
 
-**Note technique :** Si on utilise `cat` sur un fichier binaire, le terminal peut planter ou afficher des symboles étranges. `strings` est la méthode "propre" pour scanner l'intérieur d'un fichier exécutable ou d'une image à la recherche d'indices (comme des flags ou des commentaires).
+### Configuration initiale
 
+- **git init** : Initialise un nouveau dépôt local.
+    
+- **git remote add origin [url]** : Lie le dépôt local au dépôt distant (GitHub).
+    
+- **git remote set-url origin [url]** : Change l'URL (ex: passer de HTTPS à SSH).
+    
 
-### Identifier Base64
+### Cycle de modification
 
-Indices visuels (Le "Check-list") :
+1. **git pull origin main** : Récupère les modifications distantes (à faire avant de travailler).
+    
+2. **git add .** : Ajoute tous les fichiers modifiés à l'index (zone de préparation).
+    
+3. **git commit -m "message"** : Enregistre les modifications localement avec un commentaire.
+    
+4. **git push origin main** : Envoie les modifications sur GitHub.
+    
 
-    Le Padding `=` : l'indice ultime. Si la chaîne se termine par un ou deux `=`, c'est presque à coup sûr du Base64. (Note : le = sert à compléter la taille du bloc)
+### Diagnostic
 
-    L'Alphabet : Il n'utilise que :
+- **git status** : Affiche l'état des fichiers (modifiés, non suivis).
+    
+- **git remote -v** : Vérifie l'URL distante et le protocole utilisé (HTTPS ou SSH).
+    
 
-        Des majuscules (A-Z)
+## Connexion et Réseau
 
-        Des minuscules (a-z)
-
-        Des chiffres (0-9)
-
-        Les symboles + et /
-
-**Exemple :** YWRtaW4= (Une fois décodé, cela donne admin).
-
-**Pour le décoder** : commande `base64 -d`
-
-
-
-----
-
-## 🔑 Lecture & Droits 
-
-
-
-----
-
-## 🌐 Connexion & Réseau 
-
-
+- **ssh [user]@[ip]** : Connexion sécurisée à une machine distante.
+    
+- **ssh -T git@github.com** : Teste la validité de la clé SSH avec GitHub.
+    
+- **script [nom_fichier.log]** : Enregistre l'intégralité de la session terminal dans un fichier.
+    
+    - Taper `exit` pour arrêter l'enregistrement.
