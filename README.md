@@ -17,7 +17,7 @@ Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premie
 
 - [ ] TryHackMe : Pre Security Path
 	- [x] Introduction to cybersecurity
-	- [ ] Network fundamentals
+	- [ ] Network fundamentals (en cours)
 	- [ ] How the web works
 	- [ ] Computer fundamentals
 	- [ ] Operating systems basics
