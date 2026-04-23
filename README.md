@@ -14,7 +14,6 @@ Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premie
 
 ### Perso
 
-
 - [ ] TryHackMe : Pre Security Path
 	- [x] Introduction to cybersecurity
 	- [ ] Network fundamentals (en cours)
@@ -24,12 +23,13 @@ Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premie
 	- [ ] Software basics
 	- [ ] Attacks and defenses
 
-
+**CTF**
 - [ ] OverTheWire : Bandit (level 21)
 
-
+**Projets**
 - [x] Connecter mon terminal au GitHub
 - [x] Télécharger une VM (VirtualBox) Kali Linux
+
 
 ## Ecole
 
