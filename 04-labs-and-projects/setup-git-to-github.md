@@ -1,3 +1,6 @@
+Lier Git à GitHub permet de travailler directement depuis le Terminal pour remplir des informations sur Github
+
+
 # Configuration initiale (manipulation -> PC Fedora)
 
 - `sudo yum install git` : installer le paquet Git 
