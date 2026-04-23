@@ -1,4 +1,4 @@
-Comprendre comment lier son PC directement à son GitHub en passant par le terminal
+Comment lier son PC à GitHub + commandes souvent utilisés dans le terminal
 
 # Configuration initiale (manipulation unique sur PC Fedora)
 
@@ -11,13 +11,33 @@ Configuration :
 - `git config --global user.name "TonPseudo"`
 - `git config --global user.email "ton@email.com"`
 
+# Obstacle du MDP : Le Token (PAT)
+
+Pour se connecter via le lien direct, GitHub va demander un password particulier, le token.
+
+**Comment créer ton Token :**
+
+Sur GitHub.com : Settings > Developer Settings
+
+Personal Access Tokens > Tokens (classic).
+
+Generate new token (classic).
+
+Donner un nom (ex: "Mon PC") et cocher la case repo (pour avoir tous les droits sur les projets).
+
+COPIER IMMÉDIATEMENT (il commence par ghp_...). Visible qu'un seule fois.
+
+[!IMPORTANT]
+Quand le terminal demande le "Password", il faut coller le token.
+
+
 # Créer un repo via le terminal -> PC to GitHub
 
 - **`mkdir "nom_du_dossier"`** : créer
 - **`cd "nom_du_dossier"`** : entrer
 	
 - **`git init`** : créer le dossier caché git
-- **`git branch -M main`** : renommer la branche par défaut "M" en main (comme dans github)
+- **`git branch -M main`** : conseil, renommer la branche par défaut "M" en main (comme dans github)
 	
 - `git remote add origin https://github.com/votre-nom/votre-repo.git`
 
@@ -34,6 +54,13 @@ Configuration :
     
 - **`git push -u origin main`** : Tu envoies la chemise par la poste à GitHub. Maintenant, c'est archivé **sur le serveur**. -u sert à retenir ce qui est derière, donc le chemin. Utile la première fois pour seulement écrire `git push` les prochaines fois
 
+### Si modification sur GitHub, enregistrer les actions sur le PC
+
+- **`git pull origin main`**
+
+
+---
+
 
 # Naviguer et s'orienter
 
@@ -48,7 +75,6 @@ Avant de créer, il faut savoir où l'on se trouve.
 - **`cd nom_du_dossier`** : Entre dans un dossier.
     
 - **`cd ..`** : Remonte d'un niveau (sort du dossier actuel).
-    
 
 
 # Créer et Organiser
