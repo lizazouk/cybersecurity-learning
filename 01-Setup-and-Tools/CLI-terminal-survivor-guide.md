@@ -1,5 +1,13 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
+## Commande de lancement
+
+Il peut être intéressant, au lancement du terminal, de mettre à jour les logiciels :
+
+`apt update` : permet de rechercher s'il y a des mises à jour
+`apt update && full-upgrade` : ajoute la fonction "si il y a du nouveau, alors mettre à jour"
+
+
 ## Navigation et Gestion de base
 
 - **pwd** : Affiche le répertoire courant (Print Working Directory).
