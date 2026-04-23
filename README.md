@@ -29,6 +29,7 @@ Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premie
 
 
 - [x] Connecter mon terminal au GitHub
+- [x] Télécharger une VM (VirtualBox) Kali Linux
 
 ## Ecole
 
