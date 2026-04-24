@@ -1,6 +1,6 @@
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
-## Commande de lancement
+# Commande de lancement
 
 Il peut être intéressant, au lancement du terminal, de mettre à jour les logiciels :
 
@@ -8,7 +8,8 @@ Il peut être intéressant, au lancement du terminal, de mettre à jour les logi
 `apt update && full-upgrade` : ajoute la fonction "si il y a du nouveau, alors mettre à jour"
 
 
-## Navigation et Gestion de base
+
+# Navigation et Gestion de base
 
 - **pwd** : Affiche le répertoire courant (Print Working Directory).
     
@@ -41,7 +42,9 @@ Il peut être intéressant, au lancement du terminal, de mettre à jour les logi
     - **rm -r [dossier]** : Supprimer un dossier et son contenu.
         
 
-## Manipulation de fichiers spéciaux
+
+
+# Manipulation de fichiers spéciaux
 
 ### Fichiers commençant par un tiret (-)
 
@@ -57,7 +60,9 @@ Encadrer le nom par des guillemets doubles.
 - Exemple : `cat "nom avec espaces.txt"`
     
 
-## Recherche et Filtrage
+
+
+# Recherche et Filtrage
 
 ### Identification du type de fichier
 
@@ -89,7 +94,9 @@ Encadrer le nom par des guillemets doubles.
     - Exemple : `cat data.txt | sort | uniq -u`
         
 
-## Encodage et Données
+
+
+# Encodage et Données
 
 ### Analyse de binaires
 
@@ -105,7 +112,9 @@ Encadrer le nom par des guillemets doubles.
     - Exemple : `echo "YWRtaW4=" | base64 -d`
         
 
-## Workflow Git et GitHub
+
+
+# Workflow Git et GitHub
 
 ### Configuration initiale
 
@@ -134,7 +143,9 @@ Encadrer le nom par des guillemets doubles.
 - **git remote -v** : Vérifie l'URL distante et le protocole utilisé (HTTPS ou SSH).
     
 
-## Connexion et Réseau
+
+
+# Connexion et Réseau
 
 - **ssh [user]@[ip]** : Connexion sécurisée à une machine distante.
     
@@ -143,3 +154,9 @@ Encadrer le nom par des guillemets doubles.
 - **script [nom_fichier.log]** : Enregistre l'intégralité de la session terminal dans un fichier.
     
     - Taper `exit` pour arrêter l'enregistrement.
+
+
+# Télécherger des paquets 
+
+- **apt install nomdupaquet** : permet d'installer un paquet
+- **apt -cash search nomapp** : permet de trouver un paquet en fonction du nom de l'app
