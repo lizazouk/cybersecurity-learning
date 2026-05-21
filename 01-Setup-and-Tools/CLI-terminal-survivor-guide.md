@@ -43,6 +43,7 @@ Il peut être intéressant, au lancement du terminal, de mettre à jour les logi
         
 - **head [fichier]** ou **tail [fichier]** : Afficher le début ou la fin du fichier
 
+- **nano [fichier]** : modifier fichier (celle que j'utilise toujours, je préfère éviter `echo` pour ne pas risquer d'écraser tous ce que j'avais déjà écrit)
 
 # Manipulation de fichiers spéciaux
 
