@@ -1,14 +1,6 @@
 Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premiers pas dans l'informatique.
 
 
-## News
-
-
---> CTF Toulouse THCON prévu le 07 mai !
-
-17 avril 2026 : mise en pause du parcours d'apprentissage sur THM, réaliser des CTF jusqu'à l'événement.
-
-
 ## Avancé apprentissage
 
 
@@ -25,6 +17,7 @@ Bienvenue sur mon dépôt de suivi d'apprentissage ! Je documente ici mes premie
 
 **CTF**
 - [ ] OverTheWire : Bandit (level 21)
+- [x] THCON Toulouse : 07 Mai 2026
 
 **Projets**
 - [x] Connecter mon terminal au GitHub
