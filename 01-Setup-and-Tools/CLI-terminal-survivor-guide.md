@@ -41,7 +41,7 @@ Il peut être intéressant, au lancement du terminal, de mettre à jour les logi
     
     - **rm -r [dossier]** : Supprimer un dossier et son contenu.
         
-
+- **head [fichier]** ou **tail [fichier]** : Afficher le début ou la fin du fichier
 
 
 # Manipulation de fichiers spéciaux
