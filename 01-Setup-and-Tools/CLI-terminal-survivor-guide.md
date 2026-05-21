@@ -34,6 +34,8 @@ Il peut être intéressant, au lancement du terminal, de mettre à jour les logi
     - **mkdir {D1,D2}** : Crée plusieurs dossiers d'un coup (expansion d'accolades).
         
 - **cp [source] [destination]** : Copier un fichier.
+
+    - **cp -r** : pour copier un dossier et ses sous dossiers.
     
 - **mv [source] [destination]** : Déplacer ou renommer un fichier/dossier.
     
