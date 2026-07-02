@@ -58,7 +58,7 @@ Je me doutais bien que je ne trouverais rien d'intéressant, mais ça m'a permit
 
 ---
 
-SPURCES UTILES :
+SOURCES UTILES :
 
 [youtube video : 4 Free Satellite Imagery Sources](https://youtu.be/OONjbRAR-TM?si=jTgfZjyu_CjshKbf)
 
