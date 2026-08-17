@@ -6,6 +6,7 @@ Contrairement à Google qui indexe le contenu textuel des pages web, Shodan scan
 
 Shodan envoie des requêtes en continu sur des milliers de ports réseau à travers le monde. Lorsqu'une machine répond, Shodan enregistre sa bannière (header HTTP, en-tête SSH/FTP, certificat SSL, version du système d'exploitation, etc.).
 
+![image site Shodan](https://github.com/lizazouk/cybersecurity-learning/blob/main/wiki-images/Shodan-exemple.png)
 
 ## Pourquoi c'est un outil puissant ?
 
